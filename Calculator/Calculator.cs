@@ -1,5 +1,3 @@
-using System.Runtime.CompilerServices;
-
 namespace Calculator;
 
 class Calculator
@@ -10,7 +8,7 @@ class Calculator
         while (running)
         {
             Console.Write("Calculator running, enter 'stop' or Ctrl+C to exit.\nEnter operator: ");
-            string mathOp = Console.ReadLine().ToLower();
+            string mathOp = Console.ReadLine()!.ToLower();
             switch (mathOp)
             {
                 case "+":
