@@ -7,7 +7,7 @@ class Calculator
         bool running = true;
         while (running)
         {
-            Console.Write("Calculator running, enter 'stop' or Ctrl+C to exit.\nEnter operator: ");
+            Console.Write("Calculator running... (Q/q or Ctrl+C to exit)\nEnter operator: ");
             string mathOp = Console.ReadLine()!.ToLower();
             switch (mathOp)
             {
@@ -23,7 +23,7 @@ class Calculator
                 case "/":
                     Console.WriteLine(Divide(ValidDouble(), ValidDouble()));
                     break;
-                case "stop":
+                case "q":
                     running = false;
                     break;
             }
