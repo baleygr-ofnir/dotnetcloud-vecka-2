@@ -1,12 +1,12 @@
 namespace Array_exercise;
 
-class NumCheckr()
+class NumChecker()
 {
     public int[] Nums = [5];
     public int[] ReverseNums = [5];
     public int Average;
     public int Highest;
-    public NumCheckr(int first, int second, int third, int fourth, int fifth) : this()
+    public NumChecker(int first, int second, int third, int fourth, int fifth) : this()
     {
         Nums = [first, second, third, fourth, fifth];
         Average = (Nums[0] + Nums[1] + Nums[2] + Nums[3] + Nums[4]) / Nums.Length;
