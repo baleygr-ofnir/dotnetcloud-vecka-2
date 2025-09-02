@@ -8,22 +8,23 @@ class Calculator
         while (running)
         {
             Console.Write("Calculator running... (Q/q or Ctrl+C to exit)\nEnter operator: ");
-            string mathOp = Console.ReadLine()!.ToLower();
+            //string mathOp = Console.ReadLine()!.ToLower();
+            char mathOp = Console.ReadKey().KeyChar;
             switch (mathOp)
             {
-                case "+":
+                case '+':
                     Console.WriteLine(Add(ValidInt(), ValidInt()));
                     break;
-                case "-":
+                case '-':
                     Console.WriteLine(Subtract(ValidInt(), ValidInt()));
                     break;
-                case "*":
+                case '*':
                     Console.WriteLine(Multiply(ValidInt(), ValidInt()));
                     break;
-                case "/":
+                case '/':
                     Console.WriteLine(Divide(ValidDouble(), ValidDouble()));
                     break;
-                case "q":
+                case 'q':
                     running = false;
                     break;
             }
