@@ -4,25 +4,51 @@ namespace Calculator;
 
 class Calculator
 {
-    public static int Add()
+    public Calculator()
     {
-        return ValidInt() + ValidInt();
+        bool running = true;
+        while (running)
+        {
+            Console.Write("Calculator running, enter 'stop' or Ctrl+C to exit.\nEnter operator: ");
+            string mathOp = Console.ReadLine().ToLower();
+            switch (mathOp)
+            {
+                case "+":
+                    Console.WriteLine(Add(ValidInt(), ValidInt()));
+                    break;
+                case "-":
+                    Console.WriteLine(Subtract(ValidInt(), ValidInt()));
+                    break;
+                case "*":
+                    Console.WriteLine(Multiply(ValidInt(), ValidInt()));
+                    break;
+                case "/":
+                    Console.WriteLine(Divide(ValidDouble(), ValidDouble()));
+                    break;
+                case "stop":
+                    running = false;
+                    break;
+            }
+        }
     }
 
-    public static int Subtract()
+    private static int Add(int a, int b)
     {
-        return ValidInt() - ValidInt();
+        return a + b;
     }
 
-    public static int Multiply()
+    private static int Subtract(int a, int b)
     {
-        return ValidInt() * ValidInt();
+        return a - b;
     }
 
-    public static double Divide()
+    private static int Multiply(int a, int b)
     {
-        double a = ValidDouble();
-        double b = ValidDouble();
+        return a * b;
+    }
+
+    private static double Divide(double a, double b)
+    {
         if (b == 0)
         {
             Console.WriteLine("Cannot divide by zero, please enter new integer.");
