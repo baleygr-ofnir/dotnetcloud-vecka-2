@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loop-array-method-oop", "lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array-exercise", "Array-exercise\Array-exercise.csproj", "{76896B72-1C84-4BBD-96AF-2B1B44DFDCEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{6B2AC390-02E9-4BE3-80E3-88C2C411B220}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{76896B72-1C84-4BBD-96AF-2B1B44DFDCEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76896B72-1C84-4BBD-96AF-2B1B44DFDCEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76896B72-1C84-4BBD-96AF-2B1B44DFDCEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B2AC390-02E9-4BE3-80E3-88C2C411B220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2AC390-02E9-4BE3-80E3-88C2C411B220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2AC390-02E9-4BE3-80E3-88C2C411B220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2AC390-02E9-4BE3-80E3-88C2C411B220}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
