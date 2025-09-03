@@ -2,12 +2,10 @@ namespace NumberGuesser;
 
 class NumberGuesser
 {
-    private int randomNum;
-    private int guessNum;
-
     public NumberGuesser()
     {
-        randomNum = new Random().Next(1, 101);
+        int guessNum;
+        var randomNum = new Random().Next(1, 101);
         do
         {
             guessNum = ValidGuess();
