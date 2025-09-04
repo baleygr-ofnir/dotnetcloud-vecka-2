@@ -18,6 +18,7 @@ public class Superhero(string Name, int PowerLevel)
         int evilBonus = new Random().Next(0, 3);
         if (PowerLevel + powerBonus >= v.EvilLevel + evilBonus)
         {
+            Taunt(v);
             Console.WriteLine($"Power level {PowerLevel} and power bonus {powerBonus} of {Name} is superior to {v.Name} with evil level {v.EvilLevel} and evil bonus {evilBonus}.");
         }
         else
